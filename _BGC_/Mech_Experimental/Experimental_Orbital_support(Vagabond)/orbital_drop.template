@@ -15,8 +15,8 @@ maxHp: 3000
 mass: 3000
 displayText: Call> ${name}
 displayDescription: [Orbital Drop]\nMuch faster than building in the Factory
-displayText_ru: Вызвать [${name_ru}]
-displayDescription_ru: [Орбитальный Маячок]\n- Вызов происходит куда быстрее,\n чем строительство на принтере
+displayText_ru: Скинуть [${name_ru}]
+displayDescription_ru: [Шашка]\n- Стабильнее и быстрее Почты России
 displayText_zh: 呼叫> ${name_zh}
 displayDescription_zh: [轨道空降]\n-比在工厂里建造要快多了 :)
 techLevel: 1

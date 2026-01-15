@@ -111,8 +111,8 @@ highPriorityQueue: true
 #=====================================================================
 text: Weapon Set I
 description: - This weapon loadout used by T2 'Leyte Class'\n Slightly stronger, less damage to hull, Best against structure\nChance to deal critical damage\n-=Weapons=-\n[AA Unguided Rocket]: Target: Air, Dmg: ${(AArocket+(AArocket/2))}, AoE\n[High Explosive Bomb]: Target: Land, dmg:${bombLand}, AoE\n Drop range: ${range_I}, Ammo: 4-8\n120% vs structure, 50% vs hull, 110% vs shield, 5 PEN\nCrit: +120% vs structure, -50% vs hull\n Changing weapon set reduce energy by ${energyP}
-text_ru: Загрузка Дрона I
-description_ru: - Усовершенствованная загрузка дрона лейте II и IV(ОФ бомба, Неуправляемые Ракеты)\n- Имеет повышенный урон по зданиям и пониженный по технике\n- Атакует воздух и наземную технику\n- Имеет шанс нанести крит. урон.
+text_ru: Фугасный микс
+description_ru: - Помесь II-го и IV-го режима Лейтуна \n- Точечные фугасы сбрасываются Айтишниками прямо на бетон, а для свободных радикалов в воздухе есть ракеты \n- Урон по бетону повышен, по жиру понижен \n- Имеется шанс крит дамага
 text_zh: 武器设置 I
 description_zh: -T2“莱特类”使用的这种武器\n-对机体的伤害较小，对建筑结构造成致命伤害\n-=武器=-\n[防空非制导火箭]：目标：空中单位，造成伤害：${(AArocket+(AArocket/2))}，范围伤害\n[高爆炸弹]：目标：陆地单位，造成伤害：${bombLand}，范围伤害\n发射范围：${range_I}\n对建筑造成120%伤害，对机体造成50%伤害，对护盾单位造成110%伤害
 
@@ -129,7 +129,7 @@ temporarilyRemoveTags: weaponT_2, weaponT_3, weaponT_4
 alsoTriggerAction: ai_timerReset
 
 showQuickWarLogToPlayer: Weapon I set! | AA Unguided Rocket/High Explosive Bomb
-showQuickWarLogToPlayer_ru: Загрузка Дрона I готова! 
+showQuickWarLogToPlayer_ru: Бугагасный микс готов! 
 showQuickWarLogToPlayer_zh: 武器 I 设置! | 防空无制导火箭/高爆炸弹
 
 #--------------------------------------------
@@ -143,8 +143,8 @@ showQuickWarLogToPlayer_zh: 武器 I 设置! | 防空无制导火箭/高爆炸�
 @copyFromSection: action_press1
 text: Weapon Set II
 description: - This weapon loadout used by T4 'Okhotnik Class'\n Slightly reduce damage, Best against Hull, Armored and Agile units\nMissile target acquisition time: 2s\n-=Weapons=-\n[AAM Magic Missile]: Target: Air, Dmg: ${ionMAA_Dmg}, Single Target\n[ASM Magic Missile]: Target: Land, Dmg: ${ionM_Dmg}, AoE\n Drop range: ${range_II}, Ammo: 4-8\n 120% vs hull, 50% vs structure, 25 PEN\nNote: If missile too close it only deal 100 dmg\n Changing weapon set reduce energy by ${energyP}
-text_ru: Загрузка Дрона II
-description_ru: - Тип боеприпасов используется от шагохода Охотник\n- Урон ниже в сравнении с оригиналом\n- Имеет пониженный урон по зданиям и повышенный по технике\n- Атакует наземную и воздушную технику.
+text_ru: Пощёчина Лешего
+description_ru: - Даёт Айтишникам побыть передастами, давая Лешьих лещей ещё и с небес \n- Дамаг, оф коурс, меньше, чем у оригинала \n- Возможна атака по кислоуродам
 text_zh: 武器设置 II
 description_zh: -T4单位“奥特霍尼克”使用的武器\n-发射会稍微减少伤害，对抗机体、装甲和敏捷部队非常有效\n-导弹击中目标的时间：2s\n-=武器=-\n[AAM魔法飞弹]：攻击目标：空中单位，造成伤害：${ionMAA_Dmg}，单体目标\n[ASM魔法导弹]：攻击目标：陆地单位，造成伤害：${ionM_Dmg}，范围伤害\n下降距离：${range_II} \n对机体造成120%伤害，对建筑造成50%伤害\n注意：如果导弹靠近单位太近，它只造成100伤害\n-更改武器将减少${energyP}能量
 
@@ -154,15 +154,15 @@ temporarilyRemoveTags: weaponT_1, weaponT_3, weaponT_4
 iconImage: ROOT:data\icons\ws_2.png
 
 showQuickWarLogToPlayer: Weapon II set! | AAM/ASM Magic Missile
-showQuickWarLogToPlayer_ru: Загрузка Дрона II готова!
+showQuickWarLogToPlayer_ru: Пощечины отвешивать готова!
 showQuickWarLogToPlayer_zh: 武器 II 设置! | AAM/ASM 魔法导弹
 [action_press3]
 @define pr: 6
 @copyFromSection: action_press1
 text: Weapon Set III
 description: - This bomb base from 'Rama' ion core and 'Type 3' ion cluster missile\n Slightly reduce damage, Bad against structure, Ignore shield \n Upon impact it has unusual explosion patern\n-=Weapon=-\n [Ion Cluster Bomb]: Target: Land, Dmg: ${ionBomb} for each line, small AoE\n Drop range: ${range_III}, Ammo: 1-2\n Ignore Shield, 40% vs structure, 100% vs hull\nBetter Rearm time\n Changing weapon set reduce energy by ${energyP}
-text_ru: Загрузка Дрона III
-description_ru: - Переоборудует все слоты с бомбами в скорострельные орудия,\n полностью меняя тип атаки на подобный штурмовику\n- Имеет пониженный урон по зданиям\n- Атакуют только наземные цели.
+text_ru: Косплей на Жировика
+description_ru: - Начинает дико кружить и обсирать врагов под собой потоком зелёной мочи \n- Солидный ДПС при использовании всех 20-ти айтишников в этом режиме \n- Урон по бетону снижен
 text_zh: 武器设置 III
 description_zh: -来自“拉玛”离子核心和“Type-3”离子簇导弹的炸弹底座\n略微减少了伤害，对建筑结构不行，忽略护盾造成伤害，撞击后，它有不寻常的爆炸模式\n-=武器=-\n[离子簇炸弹]：目标：陆地单位，伤害:${ionBomb}每条线，小爆炸范围\n投掷范围：${range_III}，弹药量：1-2\n忽略护盾，对建筑结构造成40%伤害，对机体造成100%伤害\n更长的重新装填时间\n更换武器组将减少${energyP}的能量
 
@@ -172,7 +172,7 @@ temporarilyRemoveTags: weaponT_1, weaponT_2, weaponT_4
 iconImage: ROOT:data\icons\ws_3.png
 
 showQuickWarLogToPlayer: Weapon III set! | Gunship Mode
-showQuickWarLogToPlayer_ru: Загрузка Дрона III готова!
+showQuickWarLogToPlayer_ru: Жир воздуха готов!
 showQuickWarLogToPlayer_zh: 武器 III 设置! | 炮艇机模式
 [action_press4]
 @define pr: 7
@@ -187,8 +187,8 @@ ai_isHighPriority: false
 
 text: Weapon Set IV
 description: - New type of heavy bomb primarily use for demolition\n Extremely stronk against structure, Very SLOW rearm time \n Bomb detonation delay: ${exDelay}s\n-=Weapon=-\n [Meteor Bomb]: Target: Land\Sub, Dmg: ${meteor_Dmg}, AoE: ${meteor_AoE}\n Drop range: ${range_IV}, Ammo: 1-2\n 200% vs structure, 100% vs hull\shield\nBetter self regen while phasing\n Changing weapon set reduce energy by ${meteor_EnergyP}
-text_ru: Загрузка Дрона IV
-description_ru: - Совершенно новый тип бомб, используемый для уничтожения всего и вся\n- Невероятно мощны против зданий, имеют ОЧЕНЬ медленную перезарядку\n- Атакуют наземные и подводные цели.
+text_ru: /dev/null бомба
+description_ru: - Позволяет Айтишникам высирать огроменные бомбы, способными обнулить здания\n- Атакуют только наземное и подводное пространство \n- Порой, чтобы высрать хотя бы одну бомбу, Айтишник пожертвует своей жизнью (Но если их 20, то эффект можно сравнить с Пердуном).
 text_zh: 武器设置 IV
 description_zh: -新型重型炸弹主要用于摧毁建筑\n-重新装填非常缓慢的定时炸弹，爆炸延迟：${exDelay}秒\n-=武器=-\n[流星炸弹]：目标：陆地/水下单位，造成伤害：${meteor_Dmg}，爆炸范围：${meteor_AoE}\n下降范围：${range_IV}\n对建筑物造成200%伤害，对机体/护盾单位造成100%伤害\n相位调整时更快的进行自我恢复\n更改武器设置减少${meteor_EnergyP}能量
 
@@ -199,7 +199,7 @@ temporarilyRemoveTags: weaponT_1, weaponT_2, weaponT_3
 iconImage: ROOT:data\icons\meteor.png
 
 showQuickWarLogToPlayer: Weapon IV set! | Meteor Bomb
-showQuickWarLogToPlayer_ru: Загрузка Дрона IV готова!
+showQuickWarLogToPlayer_ru: Над врагом ожидается метеоризм...
 showQuickWarLogToPlayer_zh: 武器 IV 设置! | 流星炸弹
 #====================Starting Drone
 [hiddenAction_startingDrones]
@@ -210,7 +210,7 @@ alsoQueueAction: droneBuild
 text: Drone ${shokaku}
 description: -Uncontrollable drone\n-Deployed via Drone Carrier\n-Can attack ground and air.
 text_ru: Дрон ${shokaku}
-description_ru: - Неконтролируемый дрон\n- Установлен на авианосце\n- Атакует наземную и воздушную технику.
+description_ru: - Простая болванка\n- разворачивается через авиапоносца\n- Бьется по чернозему и кислороду.
 text_zh:无人机 ${shokaku}
 description_zh: -无法控制的无人机\n-通过无人机载体部署\n-可以攻击地面和空中单位
 
@@ -223,7 +223,7 @@ isActive: false
 
 isLocked: if not self.resource(greaterThan=0, type='shokakuDrone_${shokaku}')
 isLockedMessage: Maximum amount already being built.
-isLockedMessage_ru: Максимальное количество уже построено
+isLockedMessage_ru: Хорош, а то лицевые ткани треснут.
 isLockedMessage_zh: 已建造最大数量
 
 produceUnits: phaseBomber_${shokaku}*2
@@ -256,8 +256,8 @@ addResources: unsetFlag=2
 text: Auto Rebuild
 buildSpeed: 0s
 description: [Rebuilds lost drones automatically]\nPrice:${Dprice}, Build time: ${BDspeed}s\n
-text_ru: Автопроизводство
-description_ru: Автоматически строит новых дронов, если те были уничтожены\n- Стоимость дрона: ${Dprice} ресурсов, время строительства: ${BDspeed} сек.
+text_ru: Автоматизированная перестройка
+description_ru: Крадет бабки на возмещение потерь вследствии жопорукости стратиста\n- Стоимость дрона: ${Dprice} далларов, время материализации: ${BDspeed} сек.
 text_zh: 自动重建
 description_zh: [自动重建失去的无人机]\n价格:${Dprice}, 建造时间: ${BDspeed}s\n
 isGuiBlinking: if not self.hasFlag(id=3)
@@ -302,7 +302,7 @@ text_zh: 返航
 
 isLocked: if self.transportingCount(greaterThan=1)
 isLockedMessage: Cannot and dont press it
-isLockedMessage_ru: Нельзя нажать эту кнопку!
+isLockedMessage_ru: Нельзя и не можно нажать эту кнопку!
 isLockedMessage_zh: 不能也不要按
 
 iconImage: ROOT:data\icons\l_Return.png
@@ -327,8 +327,8 @@ highPriorityQueue: true
 
 text: Detroy Drone
 description: Press it, if the drone got stuck\nRefund: ${Dprice/2}
-text_ru: Уничтожить Дрона
-description_ru: Нажми это, если дрон застрял\nВозврат: ${Dprice/2} ресурсов
+text_ru: Деструктуризировать Айтишника
+description_ru: Нажмите, если что-то пошло не так\nВозврат: ${Dprice/2} далларов
 text_zh: 摧毁无人机
 description_zh:-如果无人机被卡住，请按一下\n-退款：${Dprice/2}
 

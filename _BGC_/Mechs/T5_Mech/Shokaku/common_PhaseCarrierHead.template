@@ -36,8 +36,8 @@ tags: Shōkaku_${shokaku}
 displayType: infoOnlyNoBox
 text: Shōkaku ${shokaku}
 description: limits 10 Shōkaku Class aircraft carrier
-text_ru: Сёкаку ${shokaku}
-description_ru: Нельзя построить больше 10 сёкаку одному игроку
+text_ru: Шозуру ${shokaku}
+description_ru: Больше 10-ти Шозуру не возыметь.
 text_zh: 翔鹤号 ${shokaku}
 description_zh: 限制10艘翔鹤号级航空母舰
 isVisible: if self.tags(includes='Shōkaku_${shokaku}')
